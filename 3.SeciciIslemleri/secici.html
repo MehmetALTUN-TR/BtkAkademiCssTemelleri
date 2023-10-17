@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*h1 etiketi için */
+        h1 {
+            color: indigo;
+        }
+
+        /*h2 etiketi için*/
+        h2,
+        h3 {
+            color: yellowgreen;
+        }
+
+        /*id si p1 olan paragrafa css uygulamak için*/
+        #p1 {
+            color: teal;
+            font-size: large;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*class ı paragraf olan paragrafa css uygulamak için*/
+        .paragraf {
+            color: royalblue;
+            font-size: larger;
+            font-weight: lighter;
+        }
+
+        /*paragraflardan class ı mavi olana css uygulamak için*/
+        p.mavi {
+            color: blue;
+        }
+
+        /*paragraflardan class ı mavi olanın ilk satırına css uygulamak için*/
+        p.mavi::first-line {
+            /*ilk satırı domates rengi yaptık*/
+            color: tomato;
+        }
+
+        /*paragraflardan class ı mavi olanın ilk harfine css uygulamak için*/
+        p.mavi::first-letter {
+            /*İlk harfi yeşil yaptık*/
+            color: yellowgreen;
+            font-size: 30px;
+        }
+
+        /*paragraflardan class ı mavi olanına fare ile seçme yapınca uygulanacak css*/
+        p.mavi::selection {
+            /*seçilen nesenelerin rengini pemb yaptık*/
+            color: pink;
+        }
+
+        /*paragraflardan class ı mavi olanın üzerine gelindiğinde css uygulamak için*/
+        p.mavi:hover {
+            color: red;
+        }
+
+        /*paragraflardan class ı kirmizi olana css uygulamak için*/
+        p.kirmizi {
+            color: red;
+        }
+
+        /*liste elemanlarının başındaki sembole css uygulamak için*/
+        ::marker {
+            color: hotpink;
+        }
+
+        /*input elemanlarından tipi text olanlara css uygulamak için*/
+        input[type="text"] {
+            background-color: rgb(167, 194, 194);
+        }
+
+        /*input elemanlarından tipi text olanlara tıklandığında focus özelliği aktif olur ve
+        bu işlem sırasında gerçekleşmesini istediğimiz css uygulaması için 
+        */
+        input[type="text"]:focus {
+            background-color: rgb(167, 194, 194);
+            width: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Temelleri Eğitim Serisine Başladık</h1>
+    <h2>H2 Başlığı</h2>
+    <h3>H3 Başlığı</h3>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore exercitationem laboriosam mollitia libero,
+        aliquid labore eveniet quod officia eum enim necessitatibus nam, reprehenderit fuga temporibus sit voluptates
+        culpa quaerat assumenda.
+    </p>
+    <p class="paragraf">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, in soluta commodi eos fuga quam libero
+        expedita modi nisi? Iusto mollitia asperiores maxime ratione ad fuga assumenda. Ullam, at veritatis.
+    </p>
+    <p class="mavi">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum aspernatur, maxime recusandae nihil quisquam
+        iure porro ipsum eum cumque excepturi nam consectetur asperiores nemo. Atque cupiditate autem accusantium velit.
+        Iste.
+    </p>
+    <p class="kirmizi">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus officia quaerat, dolore eius porro non
+        magnam assumenda corrupti debitis, placeat quisquam! Deleniti, cumque hic a repellat harum quasi quod ullam.
+    </p>
+    <ol>
+        <li>Sarı</li>
+        <li>Mavi</li>
+        <li>Mor</li>
+    </ol>
+    <input type="text">
+</body>
+
+</html>
