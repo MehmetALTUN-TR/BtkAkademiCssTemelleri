@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding and Margin</title>
+    <style>
+        *{
+            box-sizing: border-box; /*bu özellik sayesinde kutunun yükseklik ve genişliği padding değeri ya da
+            margin değiri değişse de değişmeyecektir.*/
+        }
+        #kutu{
+            height: 200px;
+            width: 200px;
+            border: solid;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+            border-width: 5px;
+            border-color: silver;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutu">
+        Kutunun padding değeri değişse de kutunun kapladığı alan değişmeyecek.
+    </div>
+</body>
+</html>
