@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index uygulaması</title>
+    <style>
+        #kutu1{
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+            border-radius: 15px;
+            z-index: 0;/*en altta olacak kutumuz*/
+            position: fixed;
+        }
+        #kutu2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 15px;
+            z-index: 1;/*indeks değerine 1 veriyoruz en altın bir üstü oluyor*/
+            position: fixed;
+            top: 15px;
+            left: 15px;
+        }
+        #kutu3{
+            height: 200px;
+            width: 200px;
+            background-color: peru;
+            border-radius: 15px;
+            z-index: 1;/*buna da 1 değerini veriyoruz ama html kod sırasına göre işlendiği için bu da kırmızı kutunun üstünde oluyor.*/
+            position: fixed;
+            top: 30px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="kutu1">
+
+    </div>
+    <div id="kutu2">
+
+    </div>
+    <div id="kutu3">
+
+    </div>
+</body>
+</html>
