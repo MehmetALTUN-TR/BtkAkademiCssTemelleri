@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutuların Konumu</title>
+    <style>
+        div{
+            border-style: solid;
+            border-width: 2px;
+
+        }
+        #buyuk{
+            width: 300px;
+            height: 200px;
+            background-color: burlywood;
+            border-color: cornflowerblue;
+            position: relative;
+            left: 50px;
+        }
+        #kucuk{
+            width: 150px;
+            height: 50px;
+            background-color: darkgoldenrod;
+            border-color: red;
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+        #kucuk2{
+            width: 150px;
+            height: 50px;
+            background-color: greenyellow;
+            border-color: gray;
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+        }
+        #orta{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            border-color: gray;
+            position: fixed;/*ekranda bir yere sabitleme*/
+            bottom: 50px;
+            left: 50px;
+            
+        }
+        #orta2{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-color: gray;
+            position: absolute;/*Bulunduğu kutu içerisindeki konuma göre ayarlama*/
+            bottom: 5px;
+            left: 5px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buyuk">
+        büyük kutu
+    </div>
+    <div id="kucuk">
+        küçük kutu
+    </div>
+    <div id="kucuk2">
+        küçük kutu2
+    </div>
+    <div id="orta">
+        <div id="orta2">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
